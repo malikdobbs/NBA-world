@@ -6,8 +6,43 @@ body, html {
 
 .top-banner {
     height: 4rem;
+
     text-align: center;
     padding-top: 1rem;
+
+    color:#a74b27;
+
+    text-transform: uppercase;
+}
+
+/* Index.html button */
+.button-positioning {
+    padding-top: 7em;
+    justify-content: center;
+}
+
+.btn--index {
+    background-color: #a74b27;
+    color: #fffff0;
+
+    border: 1px solid #a74b27;
+    border-radius: 0.8em;
+
+    height: 4em;
+    width: 7em;
+
+    padding-top: 1.25em;
+    
+    opacity: 0.9;
+}
+
+.btn--index:hover,
+.btn--index:active,
+.btn--index:focus,
+.btn--index:active:focus {
+    color: #a74b27;
+    background-color: #fffff0;
+    opacity: 0.9;
 }
 
 /* Index.html hero image */
