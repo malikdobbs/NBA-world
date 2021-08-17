@@ -1,0 +1,8 @@
+.hero-image {
+    background: url("../images/nba-east-west.jpeg") no-repeat center center; 
+    background-size: cover;
+    
+    height: 85vh;
+    position: relative;
+    
+}
