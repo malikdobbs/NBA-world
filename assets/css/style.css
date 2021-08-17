@@ -1,12 +1,21 @@
 body, html {
     height: 100%;
 }
+
+/* Header */
+
+.top-banner {
+    height: 4rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
 /* Index.html hero image */
 .hero-image {
-    background: url("../images/nba-east-west.jpeg") no-repeat center right scroll; 
+    background: url("../images/nba-east-west.jpeg") no-repeat center fixed; 
     background-size: cover;
     
-    height: 90vh;
+    height: 85vh;
 
     display: flex;
 
@@ -23,7 +32,8 @@ footer {
 
     border: 1px solid #a74b27;
     margin: 0;
-    padding: 0.5rem;
+    
+    position: relative;
 }
 
 .social-media {
