@@ -73,7 +73,11 @@ body, html {
 
 .modal-content {
     border-radius: 1.5em;
+
     background-image: radial-gradient(#d0937b, #dc7249);
+
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .modal-title {
@@ -94,6 +98,10 @@ body, html {
 .game-difficulty {
     list-style: none;
     padding: 0;
+}
+
+.contact-form {
+    margin-bottom: 1em;
 }
 
 /* Footer */

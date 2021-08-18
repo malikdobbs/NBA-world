@@ -10,6 +10,15 @@
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a1269a9d86.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_DcTI8na8sMJ9tu1UWKAou");
+        })();
+    </script>
     <title>NBA World</title>
 </head>
 <body>
@@ -60,6 +69,26 @@
                             <br>
                         <button type="button" class="btn btn-secondary modal-button" data-bs-dismiss="modal">
                             Contact Us</button>
+                        <section class="container-fluid ">
+                            <div class="row bg-color-contact">
+                                <div>
+                                    <h6 class="contact-form">If you have any queries, don't hesitate to
+                                        contact us using the form below:</h6>
+                                </div>
+                                <div class="center-form">
+                                    <form onsubmit="return sendMail(this);">
+                                        <input type="text" name="name" class="form-control" id="fullname" 
+                                        placeholder="Name" required/>
+                                        <input type="text" name="emailaddress" class="form-control" 
+                                        id="emailaddress" placeholder="Email" required/>
+                                        <textarea rows="5" name="projectsummary" class="form-control" 
+                                        id="yourenquiry" placeholder="Your Enquiry" required></textarea>
+                                        <button type="submit" class="btn btn-secondary center-block">
+                                            Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                            </section>
                 </div>
             
           </div>
@@ -99,5 +128,6 @@
         </div>
     </footer>
     <!-- /Footer end -->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
