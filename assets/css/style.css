@@ -61,6 +61,23 @@ body, html {
     position: relative;
 }
 
+/* Modal */
+
+.modal-dialog {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 10em;
+}
+
+.modal-content {
+    border-radius: 1.5em;
+    background-image: radial-gradient(#d0937b, #dc7249);
+}
+
+.modal-title {
+    padding-left: 7.5em;
+}
+
 /* Footer */
 footer {
     background-color: #a74b27;
