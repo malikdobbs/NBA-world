@@ -67,6 +67,8 @@ body, html {
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 10em;
+
+    text-align: center;
 }
 
 .modal-content {
@@ -76,6 +78,17 @@ body, html {
 
 .modal-title {
     padding-left: 7.5em;
+}
+
+.modal-button {
+    width: 10em;
+    height: 3em;
+
+    border-radius: 1em;
+
+    text-decoration: none;
+    
+    margin: 1em;
 }
 
 /* Footer */
@@ -91,7 +104,9 @@ footer {
 
 .social-media {
     word-spacing: 1em;
+
     text-align: center;
+
     padding-right: 2em;
 }
 
