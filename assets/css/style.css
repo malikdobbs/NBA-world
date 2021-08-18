@@ -27,14 +27,12 @@ body, html {
     color: #fffff0;
 
     border: 1px solid #a74b27;
-    border-radius: 0.8em;
+    border-radius: 1em;
 
+    width: 10em;
     height: 4em;
-    width: 7em;
 
     padding-top: 1.25em;
-    
-    opacity: 0.9;
 }
 
 .btn--index:hover,
@@ -43,7 +41,7 @@ body, html {
 .btn--index:active:focus {
     color: #a74b27;
     background-color: #fffff0;
-    opacity: 0.9;
+    border-color: #fffff0;
 }
 
 /* Index.html hero image */
@@ -85,6 +83,12 @@ body, html {
 }
 
 .modal-button {
+    background-color: #a74b27;
+    color: #fffff0;
+
+    border: 1px solid #a74b27;
+    border-radius: 1em;
+
     width: 10em;
     height: 3em;
 
@@ -94,6 +98,16 @@ body, html {
 
     margin: 1em;
 }
+
+.modal-button:hover,
+.modal-button:active,
+.bmodal-button:focus,
+.modal-button:active:focus {
+    color: #a74b27;
+    background-color: #fffff0;
+    border-color: #fffff0;
+}
+
 
 .game-difficulty {
     list-style: none;
