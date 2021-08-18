@@ -8,9 +8,10 @@ body, html {
     height: 4rem;
 
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 1em;
 
-    color:#a74b27;
+    color:#fffff0;
+    background-color: #575757;
 
     text-transform: uppercase;
 }
@@ -72,15 +73,15 @@ footer {
 }
 
 .social-media {
-    word-spacing: 1rem;
+    word-spacing: 1em;
     text-align: center;
-    padding-right: 2rem;
+    padding-right: 2em;
 }
 
 .social-media li a i {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     
-    padding: 1rem;
+    padding: 1em;
 
     color: #fffff0;
 
