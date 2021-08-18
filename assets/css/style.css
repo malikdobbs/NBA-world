@@ -87,8 +87,13 @@ body, html {
     border-radius: 1em;
 
     text-decoration: none;
-    
+
     margin: 1em;
+}
+
+.game-difficulty {
+    list-style: none;
+    padding: 0;
 }
 
 /* Footer */
