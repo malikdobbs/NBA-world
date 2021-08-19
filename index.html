@@ -50,24 +50,30 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
                 <div>
-                    <br>
-                    <p>Welcome to NBA World memory card matching game. Please choose one of the options below:</p>
-                    <button type="button" class="btn btn-secondary modal-button" data-bs-dismiss="modal">
-                        How to Play</button>
-                        <p>The objective of the game is to match all cards on the board before the time runs out.
-                            A match is made if a player identifies 2 flipped cards that are identical. If the card's 
-                            do not match then the cards will flip back over. There are 3 difficulty levels available
-                            for a player to test themselves if they find the game to easy:
-                        </p>
-                        <ul class="game-difficulty">
-                            <li>Easy - 18 cards</li>
-                            <li>Medium - 24 cards</li>
-                            <li>Hard - 30 cards</li>
-                        </ul>
-                        <button type="button" class="btn btn-secondary modal-button" data-bs-dismiss="modal">
+                    <div>
+                        <br>
+                        <p>Welcome to NBA World memory card matching game. Please choose one of the options below:</p>
+                        <button type="button" class="btn btn-secondary modal-button" onclick="displayInfo()">
+                            How to Play
+                        </button>
+                            <p id="modalContent">The objective of the game is to match all cards on the board before the time runs out.
+                                A match is made if a player identifies 2 flipped cards that are identical. If the card's 
+                                do not match then the cards will flip back over. There are 3 difficulty levels available
+                                for a player to test themselves if they find the game to easy:
+                                <br>
+                                <br>
+                                Easy - 18 cards
+                                <br>
+                                Medium - 24 cards
+                                <br>
+                                Hard - 30 cards
+                            </p>
+                    </div>
+
+                        <button type="button" class="btn btn-secondary modal-button">
                             New Game</button>
                             <br>
-                        <button type="button" class="btn btn-secondary modal-button" data-bs-dismiss="modal">
+                        <button type="button" class="btn btn-secondary modal-button">
                             Contact Us</button>
                         <section class="container-fluid ">
                             <div class="row bg-color-contact">

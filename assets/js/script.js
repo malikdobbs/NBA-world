@@ -17,3 +17,12 @@ function sendMail(contactForm) {
     );
     return false;  // To block from loading a new page
 }
+
+function displayInfo() {
+    var displayContent = document.getElementById("modalContent");
+    if (displayContent.style.display === "none") {
+        displayContent.style.display = "block";
+    } else {
+        displayContent.style.display = "none";
+    }
+}
