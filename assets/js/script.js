@@ -5,11 +5,13 @@ function sendMail(contactForm) {
         "your_enquiry": contactForm.yourenquiry.value
     })
     .then(
-        function(response) {
-            console.log("SUCCESS", response);
+        function() {
+            alert("Thanks for your enquiry");
+            console.log("SUCCESS");
         },
-        function(error) {
-            console.log("FAILED", error);
+        function() {
+            alert("Enquiry failed to submit");
+            console.log("False");
         }
     );
     return false;  // To block from loading a new page
