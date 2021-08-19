@@ -81,19 +81,25 @@ h1,h4 {
 }
 
 .hero-image-easy-game {
-    background: url("../images/basketball-court-2.png") no-repeat center; 
+    background: url("../images/basketball-court-2.png") no-repeat center scroll; 
     background-size: cover;
-
-    opacity: 0.6;
     
     height: 85vh;
 
     display: flex;
 
-    align-items: center;
-    justify-content: center;
-
     position: relative;
+    z-index: 1;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .25);
+    z-index: -1;
 }
 
 /* Modal */
@@ -162,6 +168,21 @@ h1,h4 {
 .game-button {
     padding-top: 2.5%;
 }
+
+/* Game styling */
+
+.score-header {
+    text-align: center;
+    
+    font-family: 'Gentium Book Basic', sans-serif;;
+    font-size: 2em;
+
+    color: #fffff0;
+    
+    padding-top: 1em;
+    padding-left: 5em;
+}
+
 
 /* Footer */
 footer {
