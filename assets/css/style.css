@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Lato&display=swap');
 
 body, html {
-    height: 100%;
     font-family: 'Lato', sans-serif;
 }
 
@@ -84,9 +83,7 @@ h1,h4 {
     background: url("../images/basketball-court-2.png") no-repeat center scroll; 
     background-size: cover;
     
-    height: 85vh;
-
-    display: flex;
+    height: 100%;
 
     position: relative;
     z-index: 1;
@@ -194,6 +191,25 @@ h1,h4 {
     padding-top: 1em;
     padding-right: 2em;
 }
+
+/* Easy game grid */
+.easy-game-grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 1.8em;
+
+    justify-content: center;
+    
+}
+
+.game-card {
+    background-color: black;
+    width: 10em;
+    height: 12em;
+}
+
+
 
 
 /* Footer */
