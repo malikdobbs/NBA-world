@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Lato&display=swap');
+
 body, html {
     height: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+h1,h4 {
+    font-family: 'Gentium Book Basic', sans-serif;
 }
 
 /* Header */
@@ -60,7 +67,7 @@ body, html {
 
 /* Hero image's */
 .hero-image {
-    background: url("../images/nba-east-west.jpeg") no-repeat center fixed; 
+    background: url("../images/nba-east-west.jpeg") no-repeat center; 
     background-size: cover;
     
     height: 85vh;
@@ -74,8 +81,10 @@ body, html {
 }
 
 .hero-image-easy-game {
-    background: url("../images/basketball-court-2.png") no-repeat center fixed; 
+    background: url("../images/basketball-court-2.png") no-repeat center; 
     background-size: cover;
+
+    opacity: 0.6;
     
     height: 85vh;
 
