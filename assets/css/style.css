@@ -58,9 +58,23 @@ body, html {
     border-color: #fffff0;
 }
 
-/* Index.html hero image */
+/* Hero image's */
 .hero-image {
     background: url("../images/nba-east-west.jpeg") no-repeat center fixed; 
+    background-size: cover;
+    
+    height: 85vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.hero-image-easy-game {
+    background: url("../images/basketball-court-2.png") no-repeat center fixed; 
     background-size: cover;
     
     height: 85vh;
