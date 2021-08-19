@@ -53,7 +53,7 @@
                     <div>
                         <br>
                         <p>Welcome to NBA World memory card matching game. Please choose one of the options below:</p>
-                        <button type="button" class="btn btn-secondary modal-button" onclick="displayInfo()">
+                        <button type="button" class="btn btn-secondary modal-button" onclick="displayRules()">
                             How to Play
                         </button>
                             <p id="modalContent">The objective of the game is to match all cards on the board before the time runs out.
@@ -69,14 +69,13 @@
                                 Hard - 30 cards
                             </p>
                     </div>
-
                         <button type="button" class="btn btn-secondary modal-button">
                             New Game</button>
                             <br>
-                        <button type="button" class="btn btn-secondary modal-button">
+                        <button type="button" class="btn btn-secondary modal-button" onclick="displayContactForm()">
                             Contact Us</button>
                         <section class="container-fluid ">
-                            <div class="row bg-color-contact">
+                            <div class="row bg-color-contact" id="modalContactForm"> 
                                 <div>
                                     <h6 class="contact-form">If you have any queries, don't hesitate to
                                         contact us using the form below:</h6>

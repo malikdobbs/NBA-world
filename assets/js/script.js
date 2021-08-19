@@ -18,11 +18,20 @@ function sendMail(contactForm) {
     return false;  // To block from loading a new page
 }
 
-function displayInfo() {
+function displayRules() {
     var displayContent = document.getElementById("modalContent");
     if (displayContent.style.display === "none") {
         displayContent.style.display = "block";
     } else {
         displayContent.style.display = "none";
+    }
+}
+
+function displayContactForm() {
+    var displayForm = document.getElementById("modalContactForm");
+    if (displayForm.style.display === "none") {
+        displayForm.style.display = "block";
+    } else {
+        displayForm.style.display = "none";
     }
 }
