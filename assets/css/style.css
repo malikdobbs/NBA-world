@@ -16,6 +16,20 @@ body, html {
     text-transform: uppercase;
 }
 
+.top-banner:hover {
+    cursor: pointer;
+}
+
+.header-title {
+    color: #fffff0;
+
+    text-decoration: none;
+}
+
+.header-title:hover {
+    color: #fffff0;
+}
+
 /* Index.html button */
 .button-positioning {
     padding-top: 7em;
@@ -105,6 +119,7 @@ body, html {
     color: #a74b27;
     background-color: hsl(60, 100%, 97%);
     border-color: #fffff0;
+    cursor: pointer;
 }
 
 
@@ -119,6 +134,10 @@ body, html {
 
 #content {
     display: block;
+}
+
+.game-button {
+    padding-top: 2.5%;
 }
 
 /* Footer */
