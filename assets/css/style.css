@@ -180,7 +180,19 @@ h1,h4 {
     color: #fffff0;
     
     padding-top: 1em;
-    padding-left: 5em;
+    padding-left: 8em;
+}
+
+.timer-header {
+    text-align: left;
+    
+    font-family: 'Gentium Book Basic', sans-serif;;
+    font-size: 2em;
+
+    color: #fffff0;
+    
+    padding-top: 1em;
+    padding-right: 2em;
 }
 
 
