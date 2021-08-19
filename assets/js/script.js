@@ -49,3 +49,11 @@ function displayGameMode() {
     }
 }
 
+// Click outside modal function taken from YouTuber (Traversy Media) credited in Readme.MD
+window.addEventListener("click", clickOutsideModal); 
+
+function clickOutsideModal(event) {
+    if(event.target == modal) {
+        clickOutsideModal.style.display = "none";
+    }
+}
