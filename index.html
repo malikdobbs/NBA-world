@@ -42,7 +42,7 @@
     <!-- /Play button end -->
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -56,10 +56,10 @@
                         <button type="button" class="btn btn-secondary modal-button" onclick="displayRules()">
                             How to Play
                         </button>
-                            <p id="modalContent">The objective of the game is to match all cards on the board before the time runs out.
-                                A match is made if a player identifies 2 flipped cards that are identical. If the card's 
-                                do not match then the cards will flip back over. There are 3 difficulty levels available
-                                for a player to test themselves if they find the game to easy:
+                            <p id="modalContent">The objective of the game is to match all cards on the board before the 
+                                time runs out. A match is made if a player identifies 2 flipped cards that are identical.
+                                If the card's do not match then the cards will flip back over. There are 3 difficulty 
+                                levels available for a player to test themselves if they want a challenge:
                                 <br>
                                 <br>
                                 Easy - 18 cards
@@ -69,9 +69,20 @@
                                 Hard - 30 cards
                             </p>
                     </div>
-                        <button type="button" class="btn btn-secondary modal-button">
+                        <button type="button" class="btn btn-secondary modal-button" onclick="displayGameMode()">
                             New Game</button>
-                            <br>
+                        <br>
+                    <div id="modalGameModes">
+                        <button type="button" class="btn btn-secondary modal-button">
+                            Easy</button>
+                        <br>
+                        <button type="button" class="btn btn-secondary modal-button">
+                            Medium</button>
+                        <br>
+                        <button type="button" class="btn btn-secondary modal-button">
+                            Hard</button>
+                        <br>
+                    </div>
                         <button type="button" class="btn btn-secondary modal-button" onclick="displayContactForm()">
                             Contact Us</button>
                         <section class="container-fluid ">
