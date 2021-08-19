@@ -7,11 +7,12 @@ function sendMail(contactForm) {
     .then(
         function() {
             alert("Thanks for your enquiry");
-            console.log("SUCCESS");
+            document.getElementById("contact-form").reset(); // Resets contact form once user has submitted form
+            console.log("Successful");
         },
         function() {
             alert("Enquiry failed to submit");
-            console.log("False");
+            console.log("Failed");
         }
     );
     return false;  // To block from loading a new page

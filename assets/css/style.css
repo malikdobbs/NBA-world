@@ -11,7 +11,7 @@ body, html {
     padding-top: 1em;
 
     color:#fffff0;
-    background-color: #575757;
+    background-color: #767575;
 
     text-transform: uppercase;
 }
@@ -104,7 +104,7 @@ body, html {
 .bmodal-button:focus,
 .modal-button:active:focus {
     color: #a74b27;
-    background-color: #fffff0;
+    background-color: hsl(60, 100%, 97%);
     border-color: #fffff0;
 }
 
