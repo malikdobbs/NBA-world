@@ -1,10 +1,21 @@
+var totalTime = 100;
+var amateurGameCountDown = setInterval(function(){
+    if (totalTime <= 0) {
+        clearInterval(amateurGameCountDown);
+        document.getElementById("timer").innerHTML = "0";
+    } else {
+        document.getElementById("timer").innerHTML = totalTime;
+    }
+    totalTime -= 1;
+}, 1000)
+
 var audio = new Audio("assets/audio/crowd-applause.wav");
 audio.loop= true;
 
-function playAudio() {
-    if(!audio.paused) { /* Check if it's not paused */
-        audio.pause();  /* To pause the audio */
-        audio.currentTime = 0;  /* To reset the time back to 0 */
+function playMusic() { //start game audio
+    if(!audio.paused) {  
+        audio.pause();  
+        audio.currentTime = 0;  
     }
     else {
         audio.play();  /* To make it play again */
