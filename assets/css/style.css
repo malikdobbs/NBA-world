@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Lato&display=swap');
 
-body, html {
+body {
+    height: 100%;
     font-family: 'Lato', sans-serif;
 }
 
@@ -177,7 +178,6 @@ h1,h4 {
     color: #fffff0;
     
     padding-top: 1em;
-    padding-left: 8em;
 }
 
 .timer-header {
@@ -189,7 +189,6 @@ h1,h4 {
     color: #fffff0;
     
     padding-top: 1em;
-    padding-right: 2em;
 }
 
 /* Overlay text */
@@ -239,7 +238,7 @@ h1,h4 {
 .easy-game-grid {
     display: grid;
 
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(4, auto);
     grid-gap: 1.8em;
 
     justify-content: center;
@@ -406,4 +405,44 @@ footer {
 
     color: #fffff0;
 
+}
+/* Media queries Index Html */
+@media screen and (max-width: 1393px) {
+    
+    .hero-image {
+       width: 100%;
+       height: 90vh;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .modal-title {
+        padding-right: 5%;
+
+    }
+}
+
+/* Media queries Easy Game*/
+@media screen and (max-width: 1393px){
+    .game-container {
+        position: relative;
+    }
+    .easy-game-grid {
+        grid-template-columns: repeat(4,auto);
+
+    }
+    .score-header .timer-header {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .easy-game-grid {
+        grid-template-columns: repeat(2, auto);
+
+    }
+    .score-header {
+        text-align: right;
+    }
 }
