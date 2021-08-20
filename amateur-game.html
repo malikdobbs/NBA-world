@@ -28,11 +28,24 @@
             <h1><a class="header-title" href="index.html">NBA World</a></h1>
         </div>
     </header>
+    <!--Hero image-->
     <div class="hero-image-easy-game">
         <div class="opaque-overlay"></div>
-        <!-- /Hero image class end -->  
+        <div class="text-overlay">
+            Click To Play
+        </div>
+        <div id="game-over" class="text-overlay visible">
+            Game Over
+            <span class="small-text-overlay">Click to Restart</span>
+        </div>
+        <div id="victory" class="text-overlay">
+            Victory
+            <span class="small-text-overlay">Click to Restart</span>
+        </div>
+        <!-- Game container -->
         <div class="container">
             <div class="row">
+                <!-- Score and Timer -->
               <div class="col score-header">
                 Score:<span>  0</span>
               </div>
@@ -40,66 +53,34 @@
                 Timer:<span>  0</span>
               </div>
             </div>
+            <!--Card Grid -->
             <div class="row easy-game-grid">
                 <div class="col game-card">
-                    <div class="new-york face-of-card">
+                    <div class="new-york front-card face-of-card">
                     </div>
                         <div class="back-card face-of-card">
                         </div>
                 </div>
                 <div class="col game-card">
-                    <div class="boston-celtics face-of-card">
+                    <div class="boston-celtics front-card face-of-card">
                     </div>
                         <div class="back-card face-of-card">
                         </div>
                 </div>
                 <div class="col game-card">
-                    <div class="toronto-raptors face-of-card">
+                    <div class="toronto-raptors front-card face-of-card">
                     </div>
                         <div class="back-card face-of-card">
                         </div>
                 </div>
                 <div class="col game-card">
-                    <div class="brooklyn-nets face-of-card">
+                    <div class="brooklyn-nets front-card face-of-card">
                     </div>
                         <div class="back-card face-of-card">
                         </div>
                 </div>
                 <div class="col game-card">
-                    <div class="golden-state face-of-card">
-                    </div>
-                        <div class="back-card face-of-card">
-                        </div>
-                </div>
-              </div>
-              <br>
-              <div class="row easy-game-grid">
-                <div class="col game-card">
-                    <div class="chicago-bulls face-of-card">
-                    </div>
-                        <div class="back-card face-of-card">
-                        </div>
-                </div>
-                <div class="col game-card">
-                    <div class="dallas-mavs face-of-card">
-                    </div>
-                        <div class="back-card face-of-card">
-                        </div>
-                </div>
-                <div class="col game-card">
-                    <div class="cleveland-cavs face-of-card">
-                    </div>
-                        <div class="back-card face-of-card">
-                        </div>
-                </div>
-                <div class="col game-card">
-                    <div class="la-lakers face-of-card">
-                    </div>
-                        <div class="back-card face-of-card">
-                        </div>
-                </div>
-                <div class="col game-card">
-                    <div class="ph-76 face-of-card">
+                    <div class="golden-state front-card face-of-card">
                     </div>
                         <div class="back-card face-of-card">
                         </div>
@@ -108,31 +89,31 @@
               <br>
               <div class="row easy-game-grid">
                 <div class="col game-card">
-                    <div class="new-york face-of-card">
+                    <div class="chicago-bulls front-card face-of-card">
                     </div>
                         <div class="back-card face-of-card">
                         </div>
                 </div>
                 <div class="col game-card">
-                    <div class="boston-celtics face-of-card">
+                    <div class="dallas-mavs front-card face-of-card">
                     </div>
                         <div class="back-card face-of-card">
                         </div>
                 </div>
                 <div class="col game-card">
-                    <div class="toronto-raptors face-of-card">
+                    <div class="cleveland-cavs front-card face-of-card">
                     </div>
                         <div class="back-card face-of-card">
                         </div>
                 </div>
                 <div class="col game-card">
-                    <div class="brooklyn-nets face-of-card">
+                    <div class="la-lakers front-card face-of-card">
                     </div>
                         <div class="back-card face-of-card">
                         </div>
                 </div>
                 <div class="col game-card">
-                    <div class="golden-state face-of-card">
+                    <div class="ph-76 front-card face-of-card">
                     </div>
                         <div class="back-card face-of-card">
                         </div>
@@ -141,31 +122,64 @@
               <br>
               <div class="row easy-game-grid">
                 <div class="col game-card">
-                    <div class="chicago-bulls face-of-card">
+                    <div class="new-york front-card face-of-card">
                     </div>
                         <div class="back-card face-of-card">
                         </div>
                 </div>
                 <div class="col game-card">
-                    <div class="dallas-mavs face-of-card">
+                    <div class="boston-celtics front-card face-of-card">
                     </div>
                         <div class="back-card face-of-card">
                         </div>
                 </div>
                 <div class="col game-card">
-                    <div class="cleveland-cavs face-of-card">
+                    <div class="toronto-raptors front-card face-of-card">
                     </div>
                         <div class="back-card face-of-card">
                         </div>
                 </div>
                 <div class="col game-card">
-                    <div class="la-lakers face-of-card">
+                    <div class="brooklyn-nets front-card face-of-card">
                     </div>
                         <div class="back-card face-of-card">
                         </div>
                 </div>
                 <div class="col game-card">
-                    <div class="ph-76 face-of-card">
+                    <div class="golden-state front-card face-of-card">
+                    </div>
+                        <div class="back-card face-of-card">
+                        </div>
+                </div>
+              </div>
+              <br>
+              <div class="row easy-game-grid">
+                <div class="col game-card">
+                    <div class="chicago-bulls front-card face-of-card">
+                    </div>
+                        <div class="back-card face-of-card">
+                        </div>
+                </div>
+                <div class="col game-card">
+                    <div class="dallas-mavs front-card face-of-card">
+                    </div>
+                        <div class="back-card face-of-card">
+                        </div>
+                </div>
+                <div class="col game-card">
+                    <div class="cleveland-cavs front-card face-of-card">
+                    </div>
+                        <div class="back-card face-of-card">
+                        </div>
+                </div>
+                <div class="col game-card">
+                    <div class="la-lakers front-card face-of-card">
+                    </div>
+                        <div class="back-card face-of-card">
+                        </div>
+                </div>
+                <div class="col game-card">
+                    <div class="ph-76 front-card face-of-card">
                     </div>
                         <div class="back-card face-of-card">
                         </div>
@@ -207,7 +221,6 @@
             </div>
         </div>
     </footer>
-    <!-- /Footer end -->
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/amateur-game.js"></script>
 </body>
 </html>

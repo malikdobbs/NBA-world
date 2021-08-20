@@ -183,13 +183,56 @@ h1,h4 {
 .timer-header {
     text-align: left;
     
-    font-family: 'Gentium Book Basic', sans-serif;;
+    font-family: 'Gentium Book Basic', sans-serif;
     font-size: 2em;
 
     color: #fffff0;
     
     padding-top: 1em;
     padding-right: 2em;
+}
+
+/* Overlay text */
+
+.text-overlay {
+    display: none;
+
+    position: fixed;
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1;
+    top: 7.5%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    color: #fffff0;
+    font-family: 'Gentium Book Basic', sans-serif;
+
+    text-transform: uppercase;
+}
+
+.small-text-overlay {
+    font-size: .25em;
+}
+
+.text-overlay.visible {
+    display: flex;
+    flex-direction: column;
+    animation: text-growth 500ms forwards;
+}
+
+@keyframes text-growth {
+    from {
+        background-color: rgba(118, 117, 117,);
+    }
+    to {
+        background-color: rgba(118, 117, 117, .85);
+        font-size: 6em;
+        font-style: italic;
+    }
 }
 
 /* Easy game grid */
@@ -205,10 +248,15 @@ h1,h4 {
 
 .game-card {
     background-color: black;
+
     width: 12em;
     height: 12em;
+
     position: relative;
+
     padding-left: 0em;
+
+    border: 2px #fffff0 solid;
 }
 
 .back-card {
@@ -219,7 +267,6 @@ h1,h4 {
     height: 100%;
 
     position: absolute;   
-    display: none;
 }
 
 .new-york {
@@ -322,12 +369,13 @@ h1,h4 {
     position: absolute;
 }
 
-.game-card.visible .atlanta-hawks {
-    transform: rotateY(-180deg);
+/* Card Rotation */
+.game-card.visible .front-card {
+    transform: rotateY(0);
 }
 
 .game-card.visible .back-card {
-    transform: rotateY(0);
+    transform: rotateY(90deg);
 }
 
 
