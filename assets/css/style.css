@@ -205,10 +205,130 @@ h1,h4 {
 
 .game-card {
     background-color: black;
-    width: 10em;
+    width: 12em;
     height: 12em;
+    position: relative;
+    padding-left: 0em;
 }
 
+.back-card {
+    background: url("../images/logo-basketball-nba-wallpaper-thumb.jpeg") no-repeat center;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;   
+    display: none;
+}
+
+.new-york {
+    background: url("../images/knicks.jpeg") no-repeat center;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+}
+
+.boston-celtics {
+    background: url("../images/celtics.jpeg") no-repeat center;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+}
+
+.brooklyn-nets {
+    background: url("../images/nets.jpeg") no-repeat center;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+}
+
+.toronto-raptors {
+    background: url("../images/toronto.jpeg") no-repeat center;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+}
+
+.chicago-bulls {
+    background: url("../images/bulls.jpeg") no-repeat center;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+}
+
+.cleveland-cavs {
+    background: url("../images/cleveland.png") no-repeat center;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+}
+
+.dallas-mavs {
+    background: url("../images/dallas-mavs.png") no-repeat center;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+}
+
+.ph-76 {
+    background: url("../images/76.png") no-repeat center;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+}
+
+.la-lakers {
+    background: url("../images/lakers.jpeg") no-repeat center;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+}
+
+.golden-state {
+    background: url("../images/golden-state-warriors-new-logo.jpeg") no-repeat center;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+}
+
+.game-card.visible .atlanta-hawks {
+    transform: rotateY(-180deg);
+}
+
+.game-card.visible .back-card {
+    transform: rotateY(0);
+}
 
 
 
