@@ -5,7 +5,7 @@ let totalTime; // Countdown timer helped to be created by James McDowell from st
 let amateurGameCountDown;
 let gameTimer;
 
-var audio = new Audio("assets/audio/blues-music.wav"); // Game audio
+var audio = new Audio("assets/audio/blues-music.wav"); // New Game audio
 audio.loop= true;
 
 function playMusic() { 
@@ -30,7 +30,18 @@ class NbaWorld {
         this.scoreCard.innerText = '0';
     }
 
-    
+    checkForVictory() {
+        let allDivs = Array.from(document.querySelectorAll('.game-card'));
+
+        isVictory = allDivs.every(div => div.classList.contains("cardsMatched"));
+        
+        if (isVictory) {
+            document.getElementById("game-over").classList.remove("visible");
+            document.getElementById("new-game").classList.remove("visible");
+            document.getElementById("victory").classList.add("visible");
+        }
+    }
+
     playGame() {
         isVictory = false;
         this.cardToCheck = null;
@@ -60,7 +71,12 @@ class NbaWorld {
             totalTime -= 1;
         }, 1000);
         
-        
+        gameTimer = setTimeout(() => {
+            if (!isVictory) {
+                document.getElementById("game-over").classList.add("visible");
+                document.getElementById("new-game").classList.remove("visible");
+            }
+        }, (totalTime * 1000));
 
     }
 
