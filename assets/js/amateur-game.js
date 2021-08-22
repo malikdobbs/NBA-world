@@ -1,11 +1,11 @@
 let isLocked = false;
 let isVictory = false;
 let clicked = [];
-let totalTime; // Countdown timer helped to be created by James McDowell from stackoverflow.com credited in readme.MD
+let totalTime;
 let amateurGameCountDown;
 let gameTimer;
 
-var audio = new Audio('assets/audio/blues-music.wav'); // New Game audio
+var audio = new Audio('assets/audio/blues-music.wav');
 audio.loop= true;
 
 function playMusic() { 
@@ -14,7 +14,7 @@ function playMusic() {
         audio.currentTime = 0;  
     }
     else {
-        audio.play();  // To make it play again
+        audio.play(); 
     }
 };
 
@@ -50,8 +50,6 @@ class NbaWorld {
         this.busy = true;
         totalTime = 100;
         
-
-        // clear all the matched cards
         document.querySelectorAll('.game-card').forEach(e => {
             e.classList.remove('visible');
             e.classList.remove('cardsMatched');
@@ -109,9 +107,7 @@ class NbaWorld {
                isLocked = false;
                this.checkForVictory();
             } else {
-                 // only clear once two cards have been clicked
                  if (clicked.length == 2) {
-                     // After one seconds has passed hide the card
                     setTimeout(() => {
                         clicked.forEach(c => {
                             if (!c.classList.contains('cardsMatched')) {
@@ -136,10 +132,8 @@ class NbaWorld {
     }
 
     getRandomCardClassName() {
-        //Array of 8 different card css classes
         const min = 0;
         const max = this.cardsArray.length - 1;
-        //Get a random index between 0 - 7 (to represent the indexes in the above array)
         const index = Math.floor(Math.random() * (max - min) + min);
 
         const cssClassName = this.cardsArray[index];
@@ -150,7 +144,6 @@ class NbaWorld {
     }
 
     shuffleCards() {
-        //This should return 16 divs (any that have the 'front-card' class)
         const allDivs = document.querySelectorAll('.front-card');
 
 
@@ -164,19 +157,18 @@ class NbaWorld {
     }
 
     canFlipCard(card) {
-        //card repreresens the clicked div element
         const isAlreadyMatched = card.classList.contains('cardsMatched');
         return isAlreadyMatched === false;
     }
 }
 
 function ready() {
-    let textOverlays = Array.from(document.getElementsByClassName('text-overlay')); // creates an array for all overlay text
+    let textOverlays = Array.from(document.getElementsByClassName('text-overlay'));
     let cards = Array.from(document.getElementsByClassName('game-card'));
     let game = new NbaWorld();
 
 
-    textOverlays.forEach(overlay => { // iterate through overlay array
+    textOverlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
             game = new NbaWorld();

@@ -1,4 +1,3 @@
-// Email function
 function sendMail(contactForm) {
     emailjs.send("service_k4fak1g","malik", {
         "from_name": contactForm.name.value,
@@ -8,16 +7,14 @@ function sendMail(contactForm) {
     .then(
         function() {
             alert("Thanks for your enquiry");
-            document.getElementById("contact-form").reset(); // Resets contact form once user has submitted form
+            document.getElementById("contact-form").reset();
         },
         function() {
             alert("Enquiry failed to submit");
         }
     );
-    return false;  // To block from loading a new page
+    return false; 
 }
-
-// Toggle display for Rules on how to play game
 function displayRules() {
     var displayContent = document.getElementById("modalContent");
     if (displayContent.style.display === "none") {
@@ -27,7 +24,6 @@ function displayRules() {
     }
 }
 
-// Toggle display for Rules on how to play game
 function displayContactForm() {
     var displayForm = document.getElementById("modalContactForm");
     if (displayForm.style.display === "none") {
@@ -37,7 +33,6 @@ function displayContactForm() {
     }
 }
 
-// Toggle display for Game difficulty modes
 function displayGameMode() {
     var displayGame = document.getElementById("modalGameModes");
     if (displayGame.style.display === "none") {
