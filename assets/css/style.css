@@ -224,7 +224,7 @@ h1,h4 {
 
 @keyframes text-growth {
     from {
-        background-color: rgba(118, 117, 117,);
+        background-color: rgba(118, 117, 117);
     }
     to {
         background-color: rgba(118, 117, 117, .85);
