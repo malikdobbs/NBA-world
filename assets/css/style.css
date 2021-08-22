@@ -240,6 +240,8 @@ h1,h4 {
     margin-top: 1.5em;
     width: 3em;
     height: 3em;
+
+    border-style: none;
 }
 
 /* Easy game grid */
