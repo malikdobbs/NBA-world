@@ -276,7 +276,7 @@ h1,h4 {
     position: absolute;   
 }
 
-.new-york {
+.front-card[data-name='new-york'] {
     background: url("../images/knicks.jpeg") no-repeat center;
     background-size: cover;
 
@@ -286,7 +286,7 @@ h1,h4 {
     position: absolute;
 }
 
-.boston-celtics {
+.front-card[data-name='boston-celtics'] {
     background: url("../images/celtics.jpeg") no-repeat center;
     background-size: cover;
 
@@ -296,7 +296,7 @@ h1,h4 {
     position: absolute;
 }
 
-.brooklyn-nets {
+.front-card[data-name='brooklyn-nets'] {
     background: url("../images/nets.jpeg") no-repeat center;
     background-size: cover;
 
@@ -306,7 +306,7 @@ h1,h4 {
     position: absolute;
 }
 
-.toronto-raptors {
+.front-card[data-name='toronto-raptors'] {
     background: url("../images/toronto.jpeg") no-repeat center;
     background-size: cover;
 
@@ -316,7 +316,7 @@ h1,h4 {
     position: absolute;
 }
 
-.chicago-bulls {
+.front-card[data-name='chicago-bulls'] {
     background: url("../images/bulls.jpeg") no-repeat center;
     background-size: cover;
 
@@ -326,7 +326,7 @@ h1,h4 {
     position: absolute;
 }
 
-.cleveland-cavs {
+.front-card[data-name='cleveland-cavs'] {
     background: url("../images/cleveland.png") no-repeat center;
     background-size: cover;
 
@@ -336,7 +336,7 @@ h1,h4 {
     position: absolute;
 }
 
-.dallas-mavs {
+.front-card[data-name='dallas-mavs'] {
     background: url("../images/dallas-mavs.png") no-repeat center;
     background-size: cover;
 
@@ -346,7 +346,7 @@ h1,h4 {
     position: absolute;
 }
 
-.ph-76 {
+.front-card[data-name='ph-76'] {
     background: url("../images/76.png") no-repeat center;
     background-size: cover;
 
@@ -356,7 +356,7 @@ h1,h4 {
     position: absolute;
 }
 
-.la-lakers {
+.front-card[data-name='la-lakers'] {
     background: url("../images/lakers.jpeg") no-repeat center;
     background-size: cover;
 
@@ -366,7 +366,7 @@ h1,h4 {
     position: absolute;
 }
 
-.golden-state {
+.front-card[data-name='golden-state'] {
     background: url("../images/golden-state-warriors-new-logo.jpeg") no-repeat center;
     background-size: cover;
 
