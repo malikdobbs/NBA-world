@@ -1,6 +1,6 @@
 # NBA World Game
 
-[link to NBA world game!](hhttps://nbaworld-malikdobbs.netlify.app/)
+[link to NBA world game!](hhttps://nbaworld-malikdobbs.netlify.app)
 
 ## UX User Experience
 
