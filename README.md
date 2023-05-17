@@ -1,6 +1,6 @@
 # NBA World Game
 
-[link to NBA world game!](https://8000-tomato-catshark-ipw4w2zy.ws-eu16.gitpod.io/index.html)
+[link to NBA world game!](hhttps://nbaworld-malikdobbs.netlify.app/)
 
 ## UX User Experience
 
